@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon" />
+  <title>Movie-ticket-booking</title>
+
+  <!-- FontAwesome CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  
+
+  <!-- custom css -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+  <main class="booking-container">
+    <label for="movie-container">Choose Your Movie :</label>
+    <select class="movie-container" id="movie-container">
+      <option value="" selected>"select a movie"</option>
+      <option value="5">War-1($5)</option>
+      <option value="9">War-2 ($9)</option>
+      <option value="10">War-3 ($10)</option>
+      <option value="10">War-4 ($10)</option>
+    </select>
+
+    <div>
+      <ul class="legend-container">
+        <li class="legend">
+          <div class="seat"></div>N/A
+        </li>
+        <li class="legend">
+          <div class="seat selected"></div>selected
+        </li>
+        <li class="legend">
+          <div class="seat booked"></div>booked
+        </li>
+      </ul>
+    </div>
+
+    <div class=" screen-container">
+      <div class="screen"></div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat booked"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat booked"></div>
+        <div class="seat booked"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+      <div class="row">
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+        <div class="seat"></div>
+      </div>
+    </div>
+    <div class="msg-contanier">
+      <p class="msg">Selected Seat counts <small class="counts" id="counts">10</small> and Total
+        Ticket Fare is $ <small class="total" id="total">100</small></p>
+    </div>
+
+  </main>
+
+
+
+  <!-- custom js -->
+  <script src="styles.js"></script>
+</body>
+
+</html>
